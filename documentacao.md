@@ -1,4 +1,15 @@
-# Introdução ao MVC com PHP
+# Roteiro de execução do projeto
+ 1- Criar as pastas
+ 2- Criar arquivo documentacao.md
+ 3- Criar arquivo index.php 
+ 4- Criar arquivo routes.php
+ 5- Gerar o HTML para utilizar as rotas (3)
+ 6- Gerar o PHP da rotas
+
+ 
+
+
+# MVC com PHP
 
 ## Objetivo
 
@@ -9,8 +20,7 @@ Ao final deste conteúdo você será capaz de:
   - 2- c - controller - php no sentido de negócios 
   - 3- m - model - banco de dados 
   
-  - Framework de PHP - Laravel e codeigniter
-  
+- Framework de PHP - Laravel e Codeigniter
 
 - Navegar entre páginas utilizando rotas
 - Criar uma View
