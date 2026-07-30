@@ -23,7 +23,7 @@ form.addEventListener("submit", async function (evento){
 
 
    try{
-    
+
     //Envia os dados para o controller
     const respostas = await fetch ("controllers/ProdutoController.php", {
         method:"post",
@@ -31,6 +31,12 @@ form.addEventListener("submit", async function (evento){
     });
 
    } catch (erro){
+
+    //Exibe mensagem caso ocorra erro
+    mensagem.className = "alert alert-danger mt-3";
+    mensagem.textContent = "Erro ao enviar os dados";
+
+    console.log(erro);
 
    }
 })
