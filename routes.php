@@ -7,8 +7,8 @@
 // --------- definir páginas validas no projeto --------- 
 $paginasValidas = [
     "produtos" => __DIR__ . "/views/produto.php",
-    "clientes" => __DIR__ . "/views/clientes.php",
-    "funcionarios" => __DIR__ . "/views/funcionarios.php",
+    "clientes" => __DIR__ . "/views/cliente.php",
+    "funcionarios" => __DIR__ . "/views/funcionario.php",
 ];
 
 // --------- capturar a página informada na url --------- 
