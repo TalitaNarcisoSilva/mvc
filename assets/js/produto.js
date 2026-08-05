@@ -29,6 +29,11 @@ function validarFormulario() {
     // Seleciona a div responsável pelas mensagens
     const mensagem = document.getElementById("mensagem");
 
+    // Impede o formulario de recarregar a página
+    $("#formProduto").on("submit", function (evento){
+        evento.preventDefault();
+    });
+
     // Configura o jQuery Validation
     $("#formProduto").validate({
 
@@ -80,7 +85,7 @@ function validarFormulario() {
             }
         },
 
-        // Não cria novas mensagens de erro
+        // Se deixar só o comentario Não cria novas mensagens de erro
         errorPlacement: function (error, element) {
 
             // As mensagens já estão no HTML
@@ -157,7 +162,7 @@ function validarFormulario() {
                 console.log(resultado);
 
                 // Verifica se ocorreu erro HTTP
-                if (!resposta.ok) {
+                if (!resposta.sucesso) {
 
                     mensagem.className =
                         "alert alert-danger mt-3";
