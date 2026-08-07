@@ -1,52 +1,96 @@
-<section>
+ <!-- css da página -->
+ <link rel="stylesheet" href="assets/css/produto.css">
 
-    <div class="col-md-6 mx-auto">
-        <h2> Cadastro de produtos</h2>
-        <!-- ==== FORMULÁRIO ====-->
+ <section>
 
-        <form id="formProduto">
+     <div class="col-md-6 mx-auto mt-5">
+         <h2> Cadastro de produtos</h2>
+         <!-- ==== FORMULÁRIO ====-->
 
-            <!-- Nome -->
-            <div class="mb-3">
-                <label for="nome"> Nome </label>
-                <input type="text" id="nome" name="nome" class="form-control">
+         <form id="formProduto">
 
-            </div>
+             <!-- Nome -->
+             <div class="mb-3">
 
-            <!-- Categoria -->
-            <div class="mb-3">
-                <label for="categoria"> Categoria </label>
-                <input type="text" id="categoria" name="categoria" class="form-control">
+                 <label for="nome"> Nome </label>
 
-            </div>
-
-            <!-- Preço -->
-            <div class="mb-3">
-                <label for="preco"> Preço </label>
-                <input type="number" id="preco" name="preco" class="form-control">
-
-            </div>
-
-            <!-- Quantidade -->
-            <div class="mb-3">
-                <label for="quantidade"> Qauntidade </label>
-                <input type="number" id="quantidade" name="quantidade" class="form-control">
-
-            </div>
-
-            <button type="submit" class="btn btn-primary w-100"> Cadastrar</button>
+                 <div class="input-group">
+                     <span class="input-group-text"> <i class="bi bi-person-fill"></i> </span>
+                     <input type="text" id="nome" name="nome" class="form-control">
+                     <div class="invalid-feedback"></div>
+                     <div class="valid-feedback"></div>
+                 </div>
+             </div>
 
 
-            <!-- MENSAGEM DE RETORNO -->
-             <div id="mensagem" class= "alert d-none mt-3"> </div>
+             <!-- Categoria -->
+             <div class="mb-3">
+
+                 <label for="categoria" class="form-label"> Categoria </label>
+
+                 <div class="input-group">
+                     <span class="input-group-text"> <i class="bi bi-tags"></i> </span>
+                     <input type="text" id="categoria" name="categoria" class="form-control">
+                     <div class="invalid-feedback"></div>
+                     <div class="valid-feedback"></div>
+                 </div>
+             </div>
+
+             <!-- Preço -->
+             <div class="mb-3">
+                 <label for="preco"> Preço </label>
+
+                 <div class="input-group">
+                     <span class="input-group-text">R$</span>
+                     <input type="text" id="preco" name="preco" class="form-control">
+
+                     <div class="invalid-feedback"></div>
+                     <div class="valid-feedback"></div>
+
+
+                 </div>
+
+
+
+             </div>
+
+             <!-- Quantidade -->
+             <div class="mb-3">
+                 <label for="number"> Quantidade </label>
+
+                 <div class="input-group">
+                     <span class="input-group-text"> <i class="bi bi-123"></i> </span>
+                     <input type="text" id="quantidade" name="quantidade" class="form-control">
+                     <div class="invalid-feedback"></div>
+                     <div class="valid-feedback"></div>
+                 </div>
+             </div>
+
+             <button type="submit" class="btn btn-primary w-100"> Cadastrar</button>
+
+
+             <!-- MENSAGEM DE RETORNO -->
+             <div id="mensagem" class="alert d-none mt-3"> </div>
 
 
 
 
-        </form>
+         </form>
 
-    </div>
+     </div>
 
-    <script src="assets/js/produto.js"></script>
-    
-</section>
+     <script src="assets/js/produto.js"></script>
+
+ </section>
+
+ <!-- jQuery -->
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+ <!-- jQuery Validation -->
+ <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+
+ <!-- jQuery Mask -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+ <!-- script da página -->
+ <script src="assets/js/produto.js"></script>

@@ -162,12 +162,12 @@ function validarFormulario() {
                 console.log(resultado);
 
                 // Verifica se ocorreu erro HTTP
-                if (!resposta.sucesso) {
+                if (!resposta.ok) {
 
                     mensagem.className =
                         "alert alert-danger mt-3";
 
-                    mensagem.textContent =
+                    mensagem.textContent =  
                         resultado.mensagem ??
                         "Erro ao cadastrar produto.";
 

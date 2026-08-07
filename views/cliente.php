@@ -1,6 +1,8 @@
+<!-- css da página -->
+<link rel="stylesheet" href="assets/css/cliente.css">
 <section>
 
-    <div class="col-md-6 mx-auto">
+    <div class="col-md-6 mx-auto mt-5">
         <h2> Cadastro de cliente</h2>
         <!-- ==== FORMULÁRIO ====-->
 
@@ -9,28 +11,63 @@
             <!-- Nome -->
             <div class="mb-3">
                 <label for="nome"> Nome </label>
-                <input type="text" id="nome" name="nome" class="form-control">
+
+                <div class="input-group">
+                    <span class="input-group-text"> <i class="bi bi-123"></i> </span>
+                    <input type="text" id="nome" name="nome" class="form-control">
+
+                    <div class="invalid-feedback"></div>
+                    <div class="valid-feedback"></div>
+
+
+                </div>
 
             </div>
 
             <!-- CPF -->
             <div class="mb-3">
                 <label for="cpf"> CPF </label>
-                <input type="number" id="cpf" name="cpf" class="form-control">
+
+                <div class="input-group">
+                    <span class="input-group-text"> <i class="bi bi-123"></i> </span>
+                    <input type="text" id="cpf" name="cpf" class="form-control">
+
+                    <div class="invalid-feedback"></div>
+                    <div class="valid-feedback"></div>
+
+                </div>
 
             </div>
 
             <!-- e-mail -->
             <div class="mb-3">
                 <label for="email"> e-mail </label>
-                <input type="text" id="email" name="email" class="form-control">
+
+                <div class="input-group">
+                    <span class="input-group-text"> <i class="bi bi-123"></i> </span>
+                    <input type="text" id="email" name="email" class="form-control">
+
+                    <div class="invalid-feedback"></div>
+                    <div class="valid-feedback"></div>
+
+                </div>
+
 
             </div>
 
             <!-- Telefone -->
             <div class="mb-3">
                 <label for="telefone"> Telefone </label>
-                <input type="number" id="telefone" name="telefone" class="form-control">
+
+                <div class="input-group">
+                    <span class="input-group-text"> <i class="bi bi-123"></i> </span>
+                    <input type="text" id="telefone" name="telefone" class="form-control">
+
+                    <div class="invalid-feedback"></div>
+                    <div class="valid-feedback"></div>
+
+                </div>
+
 
             </div>
 
@@ -48,6 +85,17 @@
 
     </div>
 
-    <script src="assets/js/cliente.js"></script>
-
+    
 </section>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- jQuery Validation -->
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+
+<!-- jQuery Mask -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+<!-- script da página -->
+<script src="assets/js/cliente.js"></script>
